@@ -31,11 +31,11 @@ function decreaseButton() {
 function setScoreButton() {
   let score = document.getElementById("firstScore");
   let promtWord = score.innerHTML;
-  promtWord = prompt("set the goals number...");
+  promtWord = prompt("Gol sayısını belirle");
   if (promtWord != Number(promtWord)) {
-    alert("Only numbers, please!!");
+    alert("Sadece numara giriniz");
   } else if (promtWord == "") {
-    alert("you need to enter a value");
+    alert("Bir değer giriniz");
   } else {
     document.getElementById("firstScore").innerHTML = promtWord;
   }
@@ -46,9 +46,9 @@ function editTeamName() {
   let teamPromtName = teamName.innerHTML;
   teamPromtName = prompt("Takım ismi giriniz...");
   if (teamPromtName == Number(teamPromtName)) {
-    alert("Please do not enter number!!");
+    alert("Numara girmeyiniz");
   } else if (teamPromtName == undefined) {
-    alert("enter a value, please!!");
+    alert("Bir değer giriniz");
   } else {
     document.getElementById("firstTeamName").innerHTML = teamPromtName;
   }
@@ -74,11 +74,11 @@ function decreaseButton2() {
 function setScoreButton2() {
   let score = document.getElementById("secondScore");
   let promtWord = score.innerHTML;
-  promtWord = prompt("set the goals number...");
+  promtWord = prompt("Gol sayısını belirle");
   if (promtWord != Number(promtWord)) {
-    alert("Only numbers, please!!");
+    alert("Sadece numara giriniz");
   } else if (promtWord == "") {
-    alert("you need to enter a value");
+    alert("Bir değer giriniz");
   } else {
     document.getElementById("secondScore").innerHTML = promtWord;
   }
@@ -86,11 +86,11 @@ function setScoreButton2() {
 function editTeamName2() {
   let teamName = document.getElementById("secondTeamName");
   let teamPromtName = teamName.innerHTML;
-  teamPromtName = prompt("Set the team name");
+  teamPromtName = prompt("Takım ismini belirle");
   if (teamPromtName == Number(teamPromtName)) {
-    alert("Please do not enter number!!");
+    alert("Numara girmeyiniz");
   } else if (teamPromtName == undefined) {
-    alert("enter a value, please!!");
+    alert("Bir değer giriniz");
   } else {
     document.getElementById("secondTeamName").innerHTML = teamPromtName;
   }
